@@ -1,0 +1,18 @@
+{
+  "name": "ai-chatbot",
+  "version": "1.0.0",
+  "description": "Full-featured AI Chatbot with streaming, auth, and chat history",
+  "scripts": {
+    "dev": "concurrently --restart-tries 3 \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
